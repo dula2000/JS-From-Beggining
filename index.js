@@ -26,7 +26,7 @@ document.getElementById("p3").innerHTML = "student age is " +studentage;
 
   window.alert("Your name is "+username);
 
-*/
+
 let userName;
 
 document.getElementById("button1").onclick= function(){
@@ -34,3 +34,38 @@ document.getElementById("button1").onclick= function(){
     window.alert(userName);
     document.getElementById("label1").innerHTML= "hello "+userName;
 }
+*/
+/* --------hypentenuse calculation------------
+
+let a;
+let b;
+let c;
+
+a= window.prompt("Enter the height ");
+a= Number(a);
+
+b=window.prompt("Enter the width ");
+b=Number(b);
+
+c= Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+
+
+//Another way by using html tags
+document.getElementById("button1").onclick = function(){
+    let a;
+let b;
+let c;
+
+a= document.getElementById("a").value;
+a= Number(a);
+
+b= document.getElementById("b").value;
+b=Number(b);
+
+c= Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+document.getElementById("label1").innerHTML =  +c;
+
+}
+*/
+
+/* ----------Counter Program------------*/
