@@ -20,4 +20,17 @@ document.getElementById("p2").innerHTML = "Hello, I'm " +age+ " years old";
 document.getElementById("p3").innerHTML = "student age is " +studentage;
 */
 
-/* ----------02. Arithmatic Expressions----------- */
+/* ----------02. User Inputs----------- 
+ 
+  let username= window.prompt("Enter Your Name");
+
+  window.alert("Your name is "+username);
+
+*/
+let userName;
+
+document.getElementById("button1").onclick= function(){
+    userName= document.getElementById("name1").value;
+    window.alert(userName);
+    document.getElementById("label1").innerHTML= "hello "+userName;
+}
