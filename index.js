@@ -69,3 +69,20 @@ document.getElementById("label1").innerHTML =  +c;
 */
 
 /* ----------Counter Program------------*/
+
+let Count =0;
+
+document.getElementById("decrease").onclick = function(){
+  Count-=1;
+  document.getElementById("counter").innerHTML=Count;
+}
+
+document.getElementById("increase").onclick = function(){
+  Count+=1;
+  document.getElementById("counter").innerHTML=Count;
+}
+
+document.getElementById("reset").onclick = function(){
+  Count=0;
+  document.getElementById("counter").innerHTML=Count;
+}

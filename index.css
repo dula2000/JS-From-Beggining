@@ -1,0 +1,16 @@
+#counter{
+    text-align: center;
+    display: block;
+    font-size: 50px;
+}
+
+#increase{
+    margin-left: 10px;
+}
+
+#reset{
+    margin-left: 270px;
+}
+#decrease{
+ margin-left: 250px;   
+}
