@@ -68,7 +68,7 @@ document.getElementById("label1").innerHTML =  +c;
 }
 */
 
-/* ----------Counter Program------------*/
+/* ----------Counter Program------------
 
 let Count =0;
 
@@ -86,3 +86,7 @@ document.getElementById("reset").onclick = function(){
   Count=0;
   document.getElementById("counter").innerHTML=Count;
 }
+
+*/
+
+/* */
