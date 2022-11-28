@@ -115,3 +115,27 @@ else{
 
 }
 */
+/*-----------Switches---------- 
+
+let grade=95;
+switch(true){
+  case grade>=90:
+    window.alert("You have A");
+    break;
+  case grade>=80:
+      window.alert("You have B");
+      break;
+  case grade>=70:
+        window.alert("You have C");
+        break;
+  case grade>=60:
+          window.alert("You have D");
+          break;
+  case grade>=50:
+            window.alert("You have F");
+            break;
+  default:
+    window.alert("no");
+
+}
+*/
