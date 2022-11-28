@@ -89,4 +89,29 @@ document.getElementById("reset").onclick = function(){
 
 */
 
-/* */
+/*---------Checked Property------------- 
+
+document.getElementById("subcribe").onclick = function(){
+
+  const myCheckBox= document.getElementById("mycheck");
+  const visa= document.getElementById("visa");
+  const master= document.getElementById("master");
+
+  if(mycheck.checked){
+     window.alert("You are subcribe");
+  }
+  else{
+window.alert("You are not");
+  }
+if(visa.checked){
+  window.alert("visa");
+}
+else if(master.checked){
+window.alert("master");
+}
+else{
+  window.alert("none of select")
+}
+
+}
+*/
