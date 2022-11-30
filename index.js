@@ -139,3 +139,12 @@ switch(true){
 
 }
 */
+
+/*---------template literals---------- */
+
+let username ="dds";
+let items = 20;
+let price= 30;
+
+console.log('hello ${username}');
+console.log('you have ${items} in your bag');
