@@ -140,7 +140,7 @@ switch(true){
 }
 */
 
-/*---------template literals---------- */
+/*---------template literals---------- 
 
 let username ="dds";
 let items = 20;
@@ -148,3 +148,12 @@ let price= 30;
 
 console.log('hello ${username}');
 console.log('you have ${items} in your bag');
+*/
+/*------------format currency----------------- */
+
+
+let myNum= 123;
+
+myNum = myNum.toLocaleString(undefined,{style:"unit", unit:"celsius"});
+
+console.log(myNum);
