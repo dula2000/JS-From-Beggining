@@ -214,3 +214,64 @@ function toFahrenheit(temp){
   return temp * 9/5 +32;
 }
 */
+
+/*-------------arrays------------ 
+
+ let fruits= ["banana","apple","mango"];
+ fruits.push("lemon");
+ fruits.pop();
+ fruits.unshift("orange"); //add values to beggining
+ fruits.shift();  //removes values from beggining
+ let index= fruits.indexOf("apple");
+ console.log(fruits);
+ console.log(index);
+ fruits = fruits.sort().reverse();
+for(let fruit of fruits){
+ console.log(fruit);
+}
+
+
+let fruits= ["banana","apple","mango"];
+let veg= ["carrots","potatoes","onions"];
+let meats= ["beef","chicken","fish"];
+
+let groceryList = [fruits,veg,meats];
+groceryList[2][0] = "steak";
+
+for(let list of groceryList){
+  for(let food of list){
+  console.log(food);
+  }
+}
+
+
+//--------rest parameters-------
+
+let a=4;
+let b=3;
+let c=2;
+let d=1;
+
+function sum(...numbers){
+  let total=0;
+  for(let number of numbers){
+  total += number
+  }
+  return total
+}
+console.log(sum(a,b,c,d));
+*/
+
+sum(2,3,displayDOM);
+
+function sum(x,y,callBack){
+  let result = x+y;
+  callBack(result);
+}
+
+function displayConsole(output){
+  console.log(output);
+}
+function displayDOM(output){
+  document.getElementById("112").innerHTML= output;
+}
