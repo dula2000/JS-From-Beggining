@@ -343,4 +343,51 @@ function checkOut(total,element){
 */
 
 
-/*----------sort of an array number----------- */
+/*----------sort of an array number----------- 
+
+let grades =[100,20,30,50,70,25];
+
+grades = grades.sort(acendingSort);
+grades.forEach(print);
+
+function decendingSort(x,y){
+  return y-x;
+}
+
+function acendingSort(x,y){
+  return x-y;
+}
+function print(element){
+  console.log(element);
+}
+
+*/
+
+
+/*----------function expression---------- 
+
+let count = 0;
+
+document.getElementById("increase").onclick = function(){
+  count+=1;
+  document.getElementById("label").innerHTML=count;
+}
+document.getElementById("decrease").onclick = function(){
+  count-=1;
+  document.getElementById("label").innerHTML=count;
+}
+*/
+
+/*----------arrow expression---------- 
+
+// const greeting = (userName)=> console.log(`hello ${userName}`);
+// greeting("duka");
+
+const precent = (x,y)=> x/y *100;
+ 
+
+console.log(`${precent(45,50)}`);
+*/
+
+
+/*----------shuffle an array---------- */
