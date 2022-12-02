@@ -276,3 +276,71 @@ function displayDOM(output){
   document.getElementById("112").innerHTML= output;
 }
 */
+
+/*----------array.forEach()-------- 
+let students = ["spongebob","pattrick","nissan"];
+students.forEach(capitalize);
+students.forEach(print);
+
+function capitalize(element,index,array){
+  array[index] = element[0].toUpperCase()+element.substring();
+
+}
+
+function print(element){
+  console.log(element);
+}
+*/
+
+
+/*----------array.map()-------- 
+
+let numbers = [1,2,3,4,5];
+let squares = numbers.map(square);
+let cubes = numbers.map(cube);
+
+cubes.forEach(print);
+
+function square(element){
+  return Math.pow(element,2);
+}
+function cube(element){
+  return Math.pow(element,3);
+}
+function print(element){
+  console.log(element);
+}
+*/
+
+
+/*----------array.filters()-------- 
+
+let ages=[18,20,12,34];
+let adults= ages.filter(checkAge);
+
+adults.forEach(print);
+
+function checkAge(element){
+  return element>=18;
+}
+
+function print(element){
+  console.log(element);
+}
+
+*/
+
+/*----------array.reduce()----------- 
+
+let prices =[5,10,15,20];
+let total = prices.reduce(checkOut);
+
+console.log(`The total is: ${total}`);
+
+function checkOut(total,element){
+  return total+element;
+}
+*/
+
+
+/*----------sort of an array number----------- */
