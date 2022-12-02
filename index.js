@@ -260,7 +260,7 @@ function sum(...numbers){
   return total
 }
 console.log(sum(a,b,c,d));
-*/
+
 
 sum(2,3,displayDOM);
 
@@ -275,3 +275,4 @@ function displayConsole(output){
 function displayDOM(output){
   document.getElementById("112").innerHTML= output;
 }
+*/
