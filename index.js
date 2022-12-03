@@ -413,7 +413,7 @@ function shuffle(array){
 }
  */
 
-/*----------Map---------- */
+/*----------Map---------- 
 
 const store = new Map([
   ["short", 30],
@@ -431,6 +431,38 @@ console.log(store.size);
 
 store.forEach((value,key)=>console.log(`${key} $${value}`));
 
-
+*/
 
 /*----------objects--------- */
+
+
+const car ={
+ model: "benz",
+  color : "red",
+  year: 2020,
+
+  drive : function(){
+    console.log("driving");
+  },
+
+  paddle : function(){
+    console.log("padle");
+  }
+}
+
+const car22 ={
+  model: "benz1",
+   color : "red1",
+   year: 2021,
+ 
+   drive : function(){
+     console.log("driving");
+   },
+ 
+   paddle : function(){
+     console.log("padle");
+   }
+ }
+
+
+car22.paddle();
