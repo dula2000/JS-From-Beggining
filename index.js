@@ -390,7 +390,7 @@ console.log(`${precent(45,50)}`);
 */
 
 
-/*----------shuffle an array---------- */
+/*----------shuffle an array---------- 
 
 let cards =["A","1","2","3","4","5","6","7","8","9","10"];
 shuffle(cards);
@@ -411,6 +411,26 @@ function shuffle(array){
   }
   return array;
 }
- 
+ */
 
-/*----------Nested Function---------- */
+/*----------Map---------- */
+
+const store = new Map([
+  ["short", 30],
+  ["shirt",30],
+  ["pants", 30],
+  ["socks",30],
+
+]);
+
+let shoppingCart =0;
+
+store.set("hat",40);
+store.delete("hat");
+console.log(store.size);
+
+store.forEach((value,key)=>console.log(`${key} $${value}`));
+
+
+
+/*----------objects--------- */
