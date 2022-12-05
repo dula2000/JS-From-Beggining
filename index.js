@@ -566,4 +566,40 @@ fish.swim();
 
 */
 
-/*----------super keyword--------- */
+/*----------super keyword--------- 
+
+//    refers to the parent class.
+//    commonly used to invoke constructor of a parent class
+
+class animal{
+ constructor(name,age){
+  this.name= name;
+  this.age=age;
+ }
+ 
+}
+
+class Rabbit extends animal{
+    constructor(name,age,speed){
+      super(name,age);
+      this.speed= speed;    
+    }
+ 
+
+}
+ class Fish extends animal{
+ 
+ constructor(name,age,fast){
+  super(name,age);
+  this.fast=fast;
+ }
+
+}
+
+const rabbit= new Rabbit("ha ha",10,20);
+const fish= new Fish("ha",20,30);
+console.log(fish.name);
+console.log(rabbit.speed);
+*/
+
+/*----------getters and setters--------- */
