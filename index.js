@@ -520,4 +520,50 @@ student2.study();
 */
 
 
-/*----------constructors--------- */
+/*----------inheritance--------- 
+// a child class can inherit all the methods and roperties from another class
+
+
+class animal{
+  alive= true;
+  eat(){
+    console.log(`this ${this.name} eat`);
+   }
+   sleep(){
+    console.log(`this ${this.name} sleep`);
+   }
+}
+
+class Rabbit extends animal{
+
+  name= "rabbit";
+
+ run(){
+  console.log(`this ${this.name} run`);
+ }
+
+}
+ class Fish extends animal{
+ 
+  name= "sam";
+
+ 
+ swim(){
+  console.log(`this ${this.name} swim`);
+ }
+
+}
+
+const rabbit = new Rabbit();
+const fish = new Fish();
+
+console.log(rabbit.alive);
+rabbit.eat();
+rabbit.run();
+fish.eat();
+console.log(fish.alive);
+fish.swim();
+
+*/
+
+/*----------inheritance--------- */
