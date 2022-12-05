@@ -566,4 +566,4 @@ fish.swim();
 
 */
 
-/*----------inheritance--------- */
+/*----------super keyword--------- */
