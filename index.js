@@ -467,7 +467,7 @@ const car22 ={
 car22.paddle();
 */
 
-/*----------class--------- */
+/*----------class--------- 
 
 // class = a blueprint for creating objects define what properties and methods they have
 //            use a constructor for unique properties.
@@ -493,3 +493,31 @@ console.log(player2.score);
 
 player1.pause();
 player2.exit();
+*/
+
+/*----------constructors--------- 
+// a special type of a class, accepts arguments and assign properties
+
+class students{
+  constructor(name,age,gpa){
+    this.name=name;
+    this.age=age;
+    this.gpa= gpa;
+  }
+  study(){
+    console.log(`${this.name} is studying`);
+  }
+}
+
+const student1 = new students("dds",30,3.83);
+const student2 = new students("desilva",22,3.93);
+
+console.log(student2.name);
+console.log(student2.age);
+console.log(student2.gpa);
+
+student2.study();
+*/
+
+
+/*----------constructors--------- */
