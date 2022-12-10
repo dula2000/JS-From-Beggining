@@ -669,7 +669,7 @@ function changeColor(car, color){
 
 */
 
-/*----------Anonymous Objects--------- */
+/*----------Anonymous Objects--------- 
 
 class Card{
     constructor(value, suit){
@@ -688,4 +688,28 @@ let cards = [new Card("A", "Hearts"),
              new Card("2", "Clubs")];
 
 cards.forEach(card => console.log(`${card.value} ${card.suit}`));
+*/
 
+
+/*----------Error Handling--------- */
+
+// error = object with a description of 
+//             something that went wrong
+
+// throw = executes a user-defined error
+
+try{
+  let x = window.prompt("Enter a #");
+  x = Number(x);
+
+  if(isNaN(x)) throw "That wasn't a number!";
+  if(x == "") throw "That was empty!";
+
+  console.log(`${x} is a number`);
+}
+catch(error){
+  console.log(error);
+}
+finally{
+  console.log("This always executes");
+}
