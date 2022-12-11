@@ -766,7 +766,7 @@ function countUp(){
 }
 */
 
-/*----------Data Objects--------- 
+/*----------Date Objects--------- 
 // The Date object is used to work with dates & times
 
 let date = new Date();
@@ -814,4 +814,19 @@ function formatTime(date){
 }
 */
 
-/*----------Data Objects--------- */
+/*----------asynchronous and synchronous --------- */
+
+// synchronous code = In an ordered sequence.
+//                                      Step-by-step linear instructions
+//                                     (start now, finish now)
+ 
+// asynchronous code = Out of sequence.
+//                     Ex. Access a database
+//                            Fetch a file
+//                            Tasks that take time
+//                     (start now, finish sometime later)
+
+
+console.log("start");
+setTimeout(()=>console.log("This is asynchronus"),5000);
+console.log("END");
