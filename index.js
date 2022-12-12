@@ -814,7 +814,7 @@ function formatTime(date){
 }
 */
 
-/*----------asynchronous and synchronous --------- */
+/*----------asynchronous and synchronous --------- 
 
 // synchronous code = In an ordered sequence.
 //                                      Step-by-step linear instructions
@@ -830,8 +830,9 @@ function formatTime(date){
 console.log("start");
 setTimeout(()=>console.log("This is asynchronus"),5000);
 console.log("END");
+*/
 
-/*----------console.time() --------- */
+/*----------console.time() --------- 
 
 // console.time() = Starts a timer you can use to 
 //                  track how long an operation takes
@@ -845,3 +846,6 @@ alert("CLICK THE OK BUTTON!");
 //end
 console.timeEnd("Response time");
 Transcript
+*/
+
+/*----------promises--------- */
