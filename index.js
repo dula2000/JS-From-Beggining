@@ -848,7 +848,7 @@ console.timeEnd("Response time");
 Transcript
 */
 
-/*----------promises--------- */
+/*----------promises--------- 
 
 // promise = object that encapsulates the result of an asynchronous operation
 //                   let asynchronous methods return values like synchronous methods
@@ -882,4 +882,34 @@ const wait = time => new Promise(resolve => {
 
 wait(3000).then(() => console.log("Thanks for waiting!"));
 */
+
+/*----------async and await--------- */
+
+// async = makes a function return a Promise
+// await = makes a function wait for a Promise
+ 
+async function loadFile(){
+const promise = new Promise((resolve,reject)=>{
+  let fileLoaded = true;
+
+  if(fileLoaded){
+      resolve("File loaded");
+  }
+  else{
+       reject ("File NOT loaded");
+  }
+})
+
+try{
+  document.getElementById("myH1").innerHTML=await promise();
+}
+catch(error){
+  document.getElementById("myH1").innerHTML=error;
+}
+}
+loadFile();
+
+
+
+
 
