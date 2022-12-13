@@ -883,7 +883,7 @@ const wait = time => new Promise(resolve => {
 wait(3000).then(() => console.log("Thanks for waiting!"));
 */
 
-/*----------async and await--------- */
+/*----------async and await--------- 
 
 // async = makes a function return a Promise
 // await = makes a function wait for a Promise
@@ -908,7 +908,10 @@ catch(error){
 }
 }
 loadFile();
+*/
 
+
+/*----------async and await--------- */
 
 
 
