@@ -957,7 +957,7 @@ elements.forEach(element => {
 })
 */
 
-/*----------add/change HTML selectors--------- */
+/*----------add/change HTML selectors--------- 
 
 // add/change HTML elements
 // .innerHTML (vulnerable to XSS attacks)
@@ -973,7 +973,33 @@ document.body.append(nameTag);
 //myList.append(listItem);
 //myList.prepend(listItem);
 //myList.insertBefore(listItem, myList.getElementsByTagName("li")[1]);
+*/
 
+/*----------events-------- 
 
+//const element = document.getElementById("myButton");
+//const element = document.body;
+//const element = document.getElementById("myText");
+const element = document.getElementById("myDiv");
+
+//element.onclick = doSomething;
+//element.onload = doSomething;
+//element.onchange = doSomething;
+//element.onmouseover = doSomething;
+//element.onmouseout = doSomethingElse;
+element.onmousedown = doSomething;
+element.onmouseup = doSomethingElse;
+
+function doSomething(){
+    //alert("You did something!");
+    element.style.backgroundColor = "red";
+}
+function doSomethingElse(){
+    //alert("You did something!");
+    element.style.backgroundColor = "lightgreen";
+}
+*/
+
+/*----------events-------- */
 
 
