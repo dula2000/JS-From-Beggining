@@ -1000,7 +1000,7 @@ function doSomethingElse(){
 }
 */
 
-/*----------addEventListener()-------- */
+/*----------addEventListener()-------- 
 
 // .addEventListener(event, function, useCapture)
 // You can add many event handlers to one element.
@@ -1016,5 +1016,20 @@ function changeBlue(){
     alert(`You selected ${this.id}`);
     this.style.backgroundColor = "lightblue"
 }
+*/
+/*----------show/hide HTML elements-------- 
+const myButton = document.querySelector("#myButton");
+const myImg = document.querySelector("#myImg");
 
+myButton.addEventListener("click", () => {
 
+    if(myImg.style.visibility == "hidden"){
+        myImg.style.visibility = "visible";
+    }
+    else{
+        myImg.style.visibility = "hidden";
+    }
+})
+*/
+
+/*----------show/hide HTML elements-------- */
