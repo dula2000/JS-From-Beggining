@@ -1065,3 +1065,135 @@ function move(event){
 */
 /*----------Animation-------- */
 
+const myButton = document.getElementById("myButton");
+const myAnimation = document.getElementById("myDiv");
+
+myButton.addEventListener("click", slide);
+//myButton.addEventListener("click", rotate);
+//myButton.addEventListener("click", scale);
+
+function slide(){
+    let timerId = null;
+    let x = 0;
+    let y = 0;
+
+    timerId = setInterval(frame, 5);
+
+    function frame(){
+        if(x >= 200 || y >= 200){
+            clearInterval(timerId);
+        }
+        else{
+            x+=1;
+            y+=1;
+            myAnimation.style.top = y + 'px';
+            myAnimation.style.left = x + 'px';
+        }
+    }
+}
+function rotate(){
+    let timerId = null;
+    let degrees = 0;
+ 
+    timerId = setInterval(frame, 5);
+
+    function frame(){
+        if(degrees >= 360){
+            clearInterval(timerId);
+        }
+        else{
+            degrees+=2;
+            myAnimation.style.transform = "rotateY("+degrees+"deg)";
+        }
+    }
+}
+function scale(){
+    let timerId = null;
+    let scaleX = 1;
+    let scaleY = 1;
+ 
+    timerId = setInterval(frame, 5);
+
+    function frame(){
+        if(scaleX <= 0.1 || scaleY <= 0.1){
+            clearInterval(timerId);
+        }
+        else{
+            scaleX-=0.01;
+            scaleY-=0.01;
+            myAnimation.style.transform = "scale("+scaleX+","+scaleY+")";
+        }
+    }
+}
+
+/*----------canvas API-------- */
+
+let canvas = document.getElementById("myCanvas");
+let context = canvas.getContext("2d");
+/*
+//DRAW LINES
+context.strokeStyle = "purple";
+context.lineWidth = 10;
+context.beginPath();
+context.moveTo(0, 0);
+context.lineTo(250, 250);
+context.lineTo(250, 500);
+context.moveTo(500, 0);
+context.lineTo(250, 250);
+context.stroke();
+*/
+/*
+//DRAW TRIANGLE
+context.strokeStyle = "grey";
+context.fillStyle = "yellow";
+context.lineWidth = 10;
+context.beginPath();
+context.moveTo(250, 0);
+context.lineTo(0, 250);
+context.lineTo(500, 250);
+context.lineTo(250, 0);
+context.stroke();
+context.fill();
+*/
+/*
+//DRAW RECTANGLE
+context.fillStyle = "black";
+context.fillRect(0, 0, 250, 250);
+context.strokeStyle = "black";
+context.strokeRect(0, 0, 250, 250);
+
+context.fillStyle = "red";
+context.fillRect(0, 250, 250, 250);
+context.strokeStyle = "black";
+context.strokeRect(0, 250, 250, 250);
+
+context.fillStyle = "green";
+context.fillRect(250, 250, 250, 250);
+context.strokeStyle = "black";
+context.strokeRect(250, 250, 250, 250);
+
+context.fillStyle = "blue";
+context.fillRect(250, 0, 250, 250);
+context.strokeStyle = "black";
+context.strokeRect(250, 0, 250, 250);
+*/
+/*
+//DRAW CIRCLE
+//(x, y, r, sAngle, eAngle, counterclockwise)
+context.fillStyle = "lightblue";
+context.strokeStyle = "darkblue";
+context.lineWidth = 10;
+context.beginPath();
+context.arc(250, 250, 200, 0, 2 * Math.PI);
+context.stroke();
+context.fill();
+
+//DRAW TEXT
+context.font = "50px MV Boli";
+context.fillStyle = "grey";
+context.textAlign = "center";
+context.fillText("YOU WIN!", canvas.width / 2, canvas.height / 2);
+*/
+
+/*----------Window-------- */
+
