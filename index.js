@@ -1063,7 +1063,7 @@ function move(event){
     }
 }
 */
-/*----------Animation-------- */
+/*----------Animation-------- 
 
 const myButton = document.getElementById("myButton");
 const myAnimation = document.getElementById("myDiv");
@@ -1125,11 +1125,12 @@ function scale(){
         }
     }
 }
-
-/*----------canvas API-------- */
+*/
+/*----------canvas API-------- 
 
 let canvas = document.getElementById("myCanvas");
 let context = canvas.getContext("2d");
+*/
 /*
 //DRAW LINES
 context.strokeStyle = "purple";
@@ -1196,4 +1197,8 @@ context.fillText("YOU WIN!", canvas.width / 2, canvas.height / 2);
 */
 
 /*----------Window-------- */
+//console.log(window.location.href);
+//console.log(window.location.hostname);
+//window.location.href= "https://google.com";
 
+//console.log(window.location.href);
